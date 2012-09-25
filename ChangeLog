@@ -1,3 +1,15 @@
+2.3.4
+-----
+- modify configuration to allow inheritance by fanouts to masters, masters
+  to default.
+- log client description when queues are created, deleted or flushed
+
+2.3.3
+-----
+- track queue item add time and compute duration on request
+- change kestrel.sh to use old PID file so that daemon-based installs can
+  be halted
+
 2.3.2
 -----
 release: 23 Aug 2012
