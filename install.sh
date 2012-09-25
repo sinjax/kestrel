@@ -3,6 +3,7 @@ PREFIX_BASE=/usr/local/kestrel
 
 mkdir -vp $PREFIX_BASE
 name=`ls dist/kestrel/*javadoc* | sed "s/.*[/]\(.*\)-javadoc[.]jar/\1/g"`
+echo installing $name
 rm -rf $name
 cp -rf dist/kestrel $PREFIX_BASE/$name
 rm $PREFIX_BASE/current
